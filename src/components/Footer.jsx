@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <main className='bg-[#5E50A1] p-10 mt-20'>
+    <main className='bg-[#5E50A1] p-10'>
         <div className='w-2/3 mx-auto'>
             <img src='/images/peworld-white.png'/>
             <p className='mt-5 text-white'>Lrem ipsum dolor sit amet, consectetur <br/> adipiscing elit. In euismod ipsum et dui <br/> rhoncus auctor.</p>

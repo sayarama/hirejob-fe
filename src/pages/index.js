@@ -102,7 +102,7 @@ export default function Home() {
         </div>
       </section>
       {/* CTA */}
-      <section className="bg-[#5E50A1] mt-10 w-2/3 p-5 md:p-11 mx-auto rounded-tl-3xl rounded-tr-md rounded-bl-md rounded-br-3xl text-center md:flex md:justify-between md:items-center">
+      <section className="bg-[#5E50A1] mt-10 mb-20 w-2/3 p-5 md:p-11 mx-auto rounded-tl-3xl rounded-tr-md rounded-bl-md rounded-br-3xl text-center md:flex md:justify-between md:items-center">
         <h1 className="text-2xl mb-10 md:mb-0 md:3xl text-white">Lorem Ipsum <br/> Dolor Sit Amet</h1>
         <div>
         <button className="bg-slate-100 text-[#5E50A1] md:p-3 p-2 rounded-md">
