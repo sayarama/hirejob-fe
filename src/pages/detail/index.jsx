@@ -3,15 +3,14 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Head from "next/head";
 import axios from "axios";
+import Link from "next/link";
 import Image from "next/image";
 import Searchbar from "@/components/Searchbar";
 import { Poppins } from "next/font/google";
-import { useRouter } from "next/router";
 
 const poppins = Poppins({ subsets: ["latin"], weight: "400" });
 
 function TalentList(props) {
-    const router = useRouter(); 
     const [listData, setListData] = useState(props?.data?.slice(0, 4));
     const [currentPage, setCurrentPage] = useState(1);
     const countData = Math.round(props?.data?.length / 4);
@@ -70,9 +69,11 @@ function TalentList(props) {
                                         </span>
                                     </div>
                                     <div className="w-full">
-                                            <button  onClick={() => router.push(`/detail/${item?.id}`)} className="md:float-right text-white bg-[#5E50A1] px-10 py-3 rounded-md">
+                                        <Link href={`/detail/${item?.id}`}>
+                                            <button className="md:float-right text-white bg-[#5E50A1] px-10 py-3 rounded-md">
                                                 Lihat Profile
                                             </button>
+                                        </Link>
                                     </div>
                                 </div>
                                 <hr />

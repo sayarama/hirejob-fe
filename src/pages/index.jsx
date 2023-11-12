@@ -4,12 +4,11 @@ import Link from "next/link";
 import { Poppins } from "next/font/google";
 import Head from "next/head";
 import Image from "next/image";
-import { useRouter } from "next/router";
 
 const poppins = Poppins({ subsets: ['latin'], weight: '400' })
 
 export default function Home() {
-  const router = useRouter();
+  
   return (
     <div id="page-home" className={poppins.className}>
       <Head>
@@ -27,9 +26,11 @@ export default function Home() {
           <p className="mt-10 mb-10">
           Dengan keahlian terbaik talent kami, kita siap <br/> untuk memimpin revolusi 4.0 menuju perubahan yang positif.
           </p>
-          <button  onClick={() => router.push(`/detail`)}  className="bg-[#5E50A1] px-5 py-3 rounded text-white">
+          <Link href="/detail">
+          <button className="bg-[#5E50A1] px-5 py-3 rounded text-white">
             Mulai Dari Sekarang
           </button>
+          </Link>
         </div>
 
         <div className="order-first md:order-last">
@@ -122,9 +123,11 @@ export default function Home() {
       <section className="bg-[#5E50A1] mt-10 mb-20 w-2/3 p-5 md:p-11 mx-auto rounded-tl-3xl rounded-tr-md rounded-bl-md rounded-br-3xl text-center md:flex md:justify-between md:items-center">
         <h1 className="text-2xl mb-10 md:mb-0 md:3xl text-white">Tunggu apa lagi?<br/> Cari talent favoritmu!! </h1>
         <div>
-        <button onClick={() => router.push(`/detail`)} className="bg-slate-100 text-[#5E50A1] md:p-3 p-2 rounded-md">
+        <Link href="/detail">
+        <button className="bg-slate-100 text-[#5E50A1] md:p-3 p-2 rounded-md">
           Mulai Dari Sekarang
         </button>
+        </Link>
         </div>
       </section>
       {/* Footer */}
