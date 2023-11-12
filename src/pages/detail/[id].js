@@ -12,7 +12,7 @@ function Detail(props) {
   return (
     <div id="detail" className={poppins.className}>
       <Head>
-        <title></title>
+        <title>Peworld | Talent Detail</title>
       </Head>
       <header className="container mx-auto pb-5">
         <Navbar />

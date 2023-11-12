@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import { Poppins } from "next/font/google";
+import Head from "next/head";
 
 const poppins = Poppins({ subsets: ['latin'], weight: '400' })
 
@@ -9,6 +10,9 @@ export default function Home() {
   
   return (
     <div id="page-home" className={poppins.className}>
+      <Head>
+        <title>Peworld | Home</title>
+      </Head>
       {/* Header */}
       <Navbar />
 
