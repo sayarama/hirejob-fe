@@ -116,7 +116,7 @@ export default function Home() {
           </div>
         </div>
         <div className="order-first md:order-last">
-          <Image src="images/img-2.png" width={600} height={600} alt="hero-image"/>
+          <Image src="/images/img-2.png" width={600} height={600} alt="hero-image"/>
         </div>
       </section>
       {/* CTA */}
