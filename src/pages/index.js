@@ -54,7 +54,7 @@ export default function Home() {
             "Jangkauan yang global dan lengkap.",
             "Penyaringan talent yang ketat.",
             "Pengalaman pengguna yang efisien dan baik.",
-          ]?.map((item, key) => (
+          ]?.map((item, id) => (
             <div className="flex items-center w-3/4 mx-auto gap-5 mb-5 justify-left md:justify-start">
               <Image
                 className="bg-[#5E50A1] p-1 rounded-full"
@@ -62,7 +62,7 @@ export default function Home() {
                 alt="logo"
                 width={20}
                 height={20}
-                key={key}
+                key={id}
               />
               <p>{item}</p>
             </div>
@@ -82,7 +82,7 @@ export default function Home() {
             "Kotlin",
             "PHP",
             "Javascript",
-          ]?.map((item, key) => (
+          ]?.map((item, id) => (
             <div className="flex items-center gap-5 mb-5">
               <Image
                 width={20}
@@ -90,7 +90,7 @@ export default function Home() {
                 alt="icon"
                 className="bg-[#5E50A1] p-1 rounded-full"
                 src="/images/Vectorlayers-1.png"
-                key={key}
+                key={id}
               />
               <p>{item}</p>
             </div>
@@ -102,7 +102,7 @@ export default function Home() {
             "C++",
             "Ruby",
             "+Dan Lainnya"
-          ]?.map((item, key) => (
+          ]?.map((item, id) => (
             <div className="flex items-center gap-5 mb-5">
               <Image
                 width={20}
@@ -110,7 +110,7 @@ export default function Home() {
                 alt="icon"
                 className="bg-[#5E50A1] p-1 rounded-full"
                 src="/images/Vectorlayers-1.png"
-                key={key}
+                key={id}
               />
               <p>{item}</p>
             </div>
