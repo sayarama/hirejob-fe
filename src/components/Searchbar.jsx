@@ -1,23 +1,8 @@
-import React from "react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import {React} from 'react'
 
-function TalentList() {
-    return (
-        <>
-            <header>
-                <Navbar />
-                <div className="bg-[#5E50A1]">
-                    <div className="container mx-auto p-4 text-white">
-                        <h2 className="text-2xl">Top Jobs</h2>
-                    </div>
-                </div>
-            </header>
-            {/* Section 1 */}
-            <main className=" bg-[#ececec]">
-                <div className="container mx-auto px-4 py-8">
-                    {/* Searchbar */}
-                    <div className="flex items-center p-1 shadow-md rounded-md gap-3 bg-white">
+function Searchbar() {
+  return (
+    <div className="flex items-center p-1 shadow-md rounded-md gap-3 bg-white">
                         <input
                             type="text"
                             className="w-full outline-none"
@@ -48,16 +33,8 @@ function TalentList() {
                         <button className="bg-[#5E50A1] rounded-md text-white px-5 py-2">
                             Search
                         </button>
-                        {/* List Section */}
-                        
                     </div>
-                </div>
-            </main>
-
-            {/* Footer */}
-            <Footer />
-        </>
-    );
+  )
 }
 
-export default TalentList;
+export default Searchbar

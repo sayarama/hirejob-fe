@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import {React, useState} from 'react'
 
 
@@ -12,7 +13,9 @@ function Navbar() {
     <div className='bg-white shadow'>
     <div className='container mx-auto'>
       <div className='flex items-center justify-between p-5'>
+        <Link href='/'>
         <img src='/images/peworld-purple.png' alt='Logo' />
+        </Link>
 
         <div className='hidden md:flex gap-5'>
           <button className='outline rounded outline-[#5E50A1] px-4 py-1'>

@@ -1,8 +1,14 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Link from "next/link";
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({ subsets: ['latin'], weight: '400' })
+
 export default function Home() {
+  
   return (
-    <>
+    <div id="page-home" className={poppins.className}>
       {/* Header */}
       <Navbar />
 
@@ -16,9 +22,11 @@ export default function Home() {
             Lorem ipsum dolor sit ament, cosetectur adipiscing elit. In <br />{" "}
             euismod ipsut et dui rhocus auctor.
           </p>
+          <Link href="/detail">
           <button className="bg-[#5E50A1] px-5 py-3 rounded text-white">
             Mulai Dari Sekarang
           </button>
+          </Link>
         </div>
 
         <div className="order-first md:order-last">
@@ -112,6 +120,6 @@ export default function Home() {
       </section>
       {/* Footer */}
       <Footer/>
-    </>
+    </div>
   );
 }
