@@ -38,7 +38,7 @@ function Detail(props) {
               <p className="text-[#9EA0A5]">{data?.location}</p>
             </span>
 
-            <p className="w-2/4 mx-auto text-[#9EA0A5] mb-4">
+            <p className="w-2/4 mx-auto text-justify text-[#9EA0A5] mb-4">
               {data?.desc}
             </p>
 

@@ -66,7 +66,7 @@ export default function Home() {
       <section className="container mx-auto text-center md:text-left flex flex-col md:flex md:flex-row justify-around items-center mt-10 p-5">
         <div>
           <h1 className="text-5xl mb-5">Skill Tallent</h1>
-          <p className="text-lg mb-5">Skill para talent memungkinkan setiap individu untuk <br/> menonjolkan beragam keterampilan yang mereka miliki <br/> dan tentunya bisa memenuhi keinginan klien.</p>
+          <p className="text-lg text-justify mb-5">Skill para talent memungkinkan setiap individu untuk menonjolkan beragam keterampilan yang mereka miliki dan tentunya bisa memenuhi keinginan klien.</p>
           <div className="grid grid-cols-2">
             <div>
             {[
@@ -90,7 +90,7 @@ export default function Home() {
             "Golang",
             "C++",
             "Ruby",
-            "10+ Bahasa lainnya"
+            "+Dan Lainnya"
           ]?.map((item, key) => (
             <div className="flex items-center gap-5 mb-5">
               <img
