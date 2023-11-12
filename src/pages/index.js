@@ -55,14 +55,13 @@ export default function Home() {
             "Penyaringan talent yang ketat.",
             "Pengalaman pengguna yang efisien dan baik.",
           ]?.map((item, id) => (
-            <div className="flex items-center w-3/4 mx-auto gap-5 mb-5 justify-left md:justify-start">
+            <div className="flex items-center w-3/4 mx-auto gap-5 mb-5 justify-left md:justify-start" key={id}>
               <Image
                 className="bg-[#5E50A1] p-1 rounded-full"
                 src="/images/Vectorlayers-1.png"
                 alt="logo"
                 width={20}
                 height={20}
-                key={id}
               />
               <p>{item}</p>
             </div>
@@ -83,14 +82,13 @@ export default function Home() {
             "PHP",
             "Javascript",
           ]?.map((item, id) => (
-            <div className="flex items-center gap-5 mb-5">
+            <div className="flex items-center gap-5 mb-5" key={id}>
               <Image
                 width={20}
                 height={20}
                 alt="icon"
                 className="bg-[#5E50A1] p-1 rounded-full"
                 src="/images/Vectorlayers-1.png"
-                key={id}
               />
               <p>{item}</p>
             </div>
@@ -103,14 +101,13 @@ export default function Home() {
             "Ruby",
             "+Dan Lainnya"
           ]?.map((item, id) => (
-            <div className="flex items-center gap-5 mb-5">
+            <div className="flex items-center gap-5 mb-5" key={id}>
               <Image
                 width={20}
                 height={20}
                 alt="icon"
                 className="bg-[#5E50A1] p-1 rounded-full"
                 src="/images/Vectorlayers-1.png"
-                key={id}
               />
               <p>{item}</p>
             </div>
