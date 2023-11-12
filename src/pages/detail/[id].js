@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Head from "next/head";
 import axios from "axios";
+import Image from "next/image";
 import { Poppins } from "next/font/google";
 
 const poppins = Poppins({ subsets: ['latin'], weight: '400' })
@@ -26,7 +27,9 @@ function Detail(props) {
               <img
                 src={data?.photo}
                 alt="avatar"
-                className="w-[150px] h-[150px] rounded-full"
+                width={200}
+                height={200}
+                className="rounded-full"
               />
             </div>
 
@@ -60,7 +63,7 @@ function Detail(props) {
             <div className="flex mx-auto mt-10 flex-col">
               <div className="flex gap-3 mb-3 justify-center">
                 <span>
-                  <img src="/images/mail.svg" />
+                  <Image src="/images/mail.svg" width={20} height={20} alt="icon" />
                 </span>
                 <span>
                   <p>talent@gmail.com</p>
@@ -68,7 +71,7 @@ function Detail(props) {
               </div>
               <div className="flex gap-3 mb-3 justify-center">
                 <span>
-                  <img src="/images/instagram.svg" />
+                  <Image src="/images/instagram.svg" width={20} height={20} alt="icon" />
                 </span>
                 <span>
                   <p>@talent12</p>
@@ -76,7 +79,7 @@ function Detail(props) {
               </div>
               <div className="flex gap-3 mb-3 justify-center">
                 <span>
-                  <img src="/images/github.svg" />
+                  <Image src="/images/github.svg" width={20} height={20} alt="icon" />
                 </span>
                 <span>
                   <p>@talent12</p>
@@ -84,7 +87,7 @@ function Detail(props) {
               </div>
               <div className="flex gap-3 mb-3 justify-center">
                 <span>
-                  <img src="/images/gitlab.svg" />
+                  <Image src="/images/gitlab.svg" width={20} height={20} alt="icon" />
                 </span>
                 <span>
                   <p>@talent12</p>

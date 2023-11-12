@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 import { Poppins } from "next/font/google";
 import Head from "next/head";
+import Image from "next/image";
 
 const poppins = Poppins({ subsets: ['latin'], weight: '400' })
 
@@ -33,14 +34,14 @@ export default function Home() {
         </div>
 
         <div className="order-first md:order-last">
-          <img src="/images/img-3.png" />
+          <Image src="/images/img-3.png" width={600} height={600} alt="hero-image" />
         </div>
       </section>
 
       {/* Section 2 */}
       <section className="container mx-auto md:text-left flex flex-col md:flex md:flex-row justify-around items-center mt-10">
         <div>
-          <img src="/images/img-1.png" />
+          <Image src="/images/img-1.png" width={600} height={600} alt="hero-image" />
         </div>
 
         <div>
@@ -80,7 +81,10 @@ export default function Home() {
             "Javascript",
           ]?.map((item, key) => (
             <div className="flex items-center gap-5 mb-5">
-              <img
+              <Image
+                width={20}
+                height={20}
+                alt="icon"
                 className="bg-[#5E50A1] p-1 rounded-full"
                 src="/images/Vectorlayers-1.png"
                 key={key}
@@ -97,7 +101,10 @@ export default function Home() {
             "+Dan Lainnya"
           ]?.map((item, key) => (
             <div className="flex items-center gap-5 mb-5">
-              <img
+              <Image
+                width={20}
+                height={20}
+                alt="icon"
                 className="bg-[#5E50A1] p-1 rounded-full"
                 src="/images/Vectorlayers-1.png"
                 key={key}
@@ -109,7 +116,7 @@ export default function Home() {
           </div>
         </div>
         <div className="order-first md:order-last">
-          <img src="images/img-2.png"/>
+          <Image src="images/img-2.png" width={600} height={600} alt="hero-image"/>
         </div>
       </section>
       {/* CTA */}

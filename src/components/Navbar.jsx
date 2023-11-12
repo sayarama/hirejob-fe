@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import {React, useState} from 'react'
+import Image from 'next/image';
 
 
 
@@ -14,7 +15,7 @@ function Navbar() {
     <div className='container mx-auto'>
       <div className='flex items-center justify-between p-5'>
         <Link href='/'>
-        <img src='/images/peworld-purple.png' alt='Logo' />
+        <Image src='/images/peworld-purple.png' width={127} height={35} alt='Logo' />
         </Link>
 
         <div className='hidden md:flex gap-5'>

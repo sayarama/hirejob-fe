@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Head from "next/head";
 import axios from "axios";
 import Link from "next/link";
+import Image from "next/image";
 import Searchbar from "@/components/Searchbar";
 import { Poppins } from "next/font/google";
 
@@ -52,7 +53,7 @@ function TalentList(props) {
                                         <h2 className="mb-3 font-bold">{item?.fullname}</h2>
                                         <p className="mb-2 text-[#9EA0A5]">{item?.job}</p>
                                         <span className=" mb-2 justify-center flex md:justify-normal gap-2">
-                                            <img src="/images/map.svg" />
+                                            <Image src="/images/map.svg" width={20} height={10} alt="map" />
                                             <p className="text-[#9EA0A5]">{item?.location}</p>
                                         </span>
                                         <span className="flex justify-center items-center md:justify-normal gap-5">
