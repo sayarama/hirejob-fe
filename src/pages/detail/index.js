@@ -7,7 +7,7 @@ import Link from "next/link";
 import Searchbar from "@/components/Searchbar";
 import { Poppins } from "next/font/google";
 
-const poppins = Poppins({ subsets: ['latin'], weight: '400' })
+const poppins = Poppins({ subsets: ["latin"], weight: "400" });
 
 function TalentList(props) {
     const [listData, setListData] = useState(props?.data?.slice(0, 4));
@@ -23,7 +23,6 @@ function TalentList(props) {
             setListData(props?.data?.slice(0, 4));
         }
     };
-
 
     return (
         <div id="talent" className={poppins.className}>
@@ -42,21 +41,21 @@ function TalentList(props) {
             <main className=" bg-[#ececec]">
                 <div className="container mx-auto px-4 py-8">
                     {/* Searchbar */}
-                    <Searchbar/>
+                    <Searchbar />
                     {/* List Section */}
-                    <div className="container mx-auto bg-white mt-8">
+                    <div className="container mx-auto bg-white shadow-md rounded-md mt-8">
                         {listData.map((item, key) => (
                             <div key={key}>
-                                <div className="flex flex-col p-3 gap-4 justify-center text-center items-center md:flex-row md:text-start">
+                                <div className="flex flex-col py-10 p-3 gap-4 justify-center text-center items-center md:flex-row md:text-start">
                                     <img className="w-28 rounded-full" src={item?.photo} />
                                     <div className="w-full">
-                                        <h2 className="mb-3">{item?.fullname}</h2>
-                                        <p className="mb-2">{item?.job}</p>
+                                        <h2 className="mb-3 font-bold">{item?.fullname}</h2>
+                                        <p className="mb-2 text-[#9EA0A5]">{item?.job}</p>
                                         <span className=" mb-2 justify-center flex md:justify-normal gap-2">
                                             <img src="/images/map.svg" />
-                                            <p>{item?.location}</p>
+                                            <p className="text-[#9EA0A5]">{item?.location}</p>
                                         </span>
-                                        <span className="flex justify-center md:justify-normal gap-5">
+                                        <span className="flex justify-center items-center md:justify-normal gap-5">
                                             {item?.skills.slice(0, 3).map((item, key) => (
                                                 <div
                                                     className="bg-[#FBB01799] border-2 border-[#FBB017] py-1 px-5 rounded"
@@ -65,6 +64,7 @@ function TalentList(props) {
                                                     <p className="text-white text-[12px]">{item}</p>
                                                 </div>
                                             ))}
+                                            <p>+And More</p>
                                         </span>
                                     </div>
                                     <div className="w-full">

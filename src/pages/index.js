@@ -15,12 +15,11 @@ export default function Home() {
       {/* Section 1 */}
       <section className="container mx-auto text-center md:text-left flex flex-col md:flex md:flex-row justify-around items-center mt-10">
         <div>
-          <h1 className="text-4xl md:text-6xl">
+          <h1 className="text-4xl font-bold md:text-6xl">
             Talenta terbaik negri <br /> untuk perubahan <br /> revolusi 4.0
           </h1>
           <p className="mt-10 mb-10">
-            Lorem ipsum dolor sit ament, cosetectur adipiscing elit. In <br />{" "}
-            euismod ipsut et dui rhocus auctor.
+          Dengan keahlian terbaik talent kami, kita siap <br/> untuk memimpin revolusi 4.0 menuju perubahan yang positif.
           </p>
           <Link href="/detail">
           <button className="bg-[#5E50A1] px-5 py-3 rounded text-white">
@@ -67,7 +66,7 @@ export default function Home() {
       <section className="container mx-auto text-center md:text-left flex flex-col md:flex md:flex-row justify-around items-center mt-10 p-5">
         <div>
           <h1 className="text-5xl mb-5">Skill Tallent</h1>
-          <p className="text-lg mb-5">Lorem ipsum dolor sit, amet consectetur adipiscing elit. In <br/> euismod ipsum et dui rhoncus auctor.</p>
+          <p className="text-lg mb-5">Skill para talent memungkinkan setiap individu untuk <br/> menonjolkan beragam keterampilan yang mereka miliki <br/> dan tentunya bisa memenuhi keinginan klien.</p>
           <div className="grid grid-cols-2">
             <div>
             {[
@@ -111,11 +110,13 @@ export default function Home() {
       </section>
       {/* CTA */}
       <section className="bg-[#5E50A1] mt-10 mb-20 w-2/3 p-5 md:p-11 mx-auto rounded-tl-3xl rounded-tr-md rounded-bl-md rounded-br-3xl text-center md:flex md:justify-between md:items-center">
-        <h1 className="text-2xl mb-10 md:mb-0 md:3xl text-white">Lorem Ipsum <br/> Dolor Sit Amet</h1>
+        <h1 className="text-2xl mb-10 md:mb-0 md:3xl text-white">Tunggu apa lagi?<br/> Cari talent favoritmu!! </h1>
         <div>
+        <Link href="/detail">
         <button className="bg-slate-100 text-[#5E50A1] md:p-3 p-2 rounded-md">
           Mulai Dari Sekarang
         </button>
+        </Link>
         </div>
       </section>
       {/* Footer */}

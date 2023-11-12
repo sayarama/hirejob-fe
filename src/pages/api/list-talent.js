@@ -9,7 +9,8 @@ const listData = [
     fullname: "Silvia Valleria",
     job: "Web Developer",
     location: "Jakarta",
-    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"]
+    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"],
+    desc: "I am Silvia Valleria, a Web Developer with a passion for presenting creative and functional solutions in the digital world. With an educational background in Information Engineering and solid experience in the industry, I combine technical expertise with creativity to create extraordinary web experiences."
   },
   {
     id: 2,
@@ -17,7 +18,8 @@ const listData = [
     fullname: "Indira Naylarissa",
     job: "Web Developer",
     location: "Jakarta",
-    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"]
+    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"],
+    desc: "I am Indira Naylarissa, a Web Developer with a passion for presenting creative and functional solutions in the digital world. With an educational background in Information Engineering and solid experience in the industry, I combine technical expertise with creativity to create extraordinary web experiences."
   },
   {
     id: 3,
@@ -25,7 +27,8 @@ const listData = [
     fullname: "Imelia Mieru",
     job: "Web Developer",
     location: "Jakarta",
-    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"]
+    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"],
+    desc: "I am Imelia Mieru, a Web Developer with a passion for presenting creative and functional solutions in the digital world. With an educational background in Information Engineering and solid experience in the industry, I combine technical expertise with creativity to create extraordinary web experiences."
   },
   {
     id: 4,
@@ -33,7 +36,8 @@ const listData = [
     fullname: "Dina Mustika",
     job: "Web Developer",
     location: "Jakarta",
-    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"]
+    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"],
+    desc: "I am Dina Mustika, a Web Developer with a passion for presenting creative and functional solutions in the digital world. With an educational background in Information Engineering and solid experience in the industry, I combine technical expertise with creativity to create extraordinary web experiences."
   },
   {
     id: 5,
@@ -41,7 +45,8 @@ const listData = [
     fullname: "Yuura Andara",
     job: "Web Developer",
     location: "Jakarta",
-    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"]
+    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"],
+    desc: "I am Yuura Andara, a Web Developer with a passion for presenting creative and functional solutions in the digital world. With an educational background in Information Engineering and solid experience in the industry, I combine technical expertise with creativity to create extraordinary web experiences."
   },
   {
     id: 6,
@@ -49,7 +54,8 @@ const listData = [
     fullname: "Elaine Clestia",
     job: "Web Developer",
     location: "Jakarta",
-    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"]
+    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"],
+    desc: "I am Elaine Celestia, a Web Developer with a passion for presenting creative and functional solutions in the digital world. With an educational background in Information Engineering and solid experience in the industry, I combine technical expertise with creativity to create extraordinary web experiences."
   },
   {
     id: 7,
@@ -57,7 +63,8 @@ const listData = [
     fullname: "Cecil Liberia",
     job: "Web Developer",
     location: "Jakarta",
-    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"]
+    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"],
+    desc: "I am Cecil Liberia, a Web Developer with a passion for presenting creative and functional solutions in the digital world. With an educational background in Information Engineering and solid experience in the industry, I combine technical expertise with creativity to create extraordinary web experiences."
   },
   {
     id: 8,
@@ -65,7 +72,8 @@ const listData = [
     fullname: "Vestia Zeta",
     job: "Web Developer",
     location: "Jakarta",
-    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"]
+    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"],
+    desc: "I am Vestia Zeta, a Web Developer with a passion for presenting creative and functional solutions in the digital world. With an educational background in Information Engineering and solid experience in the industry, I combine technical expertise with creativity to create extraordinary web experiences."
   },
   {
     id: 9,
@@ -73,7 +81,8 @@ const listData = [
     fullname: "Patricia Valita",
     job: "Web Developer",
     location: "Jakarta",
-    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"]
+    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"],
+    desc: "I am Patricia Valita, a Web Developer with a passion for presenting creative and functional solutions in the digital world. With an educational background in Information Engineering and solid experience in the industry, I combine technical expertise with creativity to create extraordinary web experiences."
   },
   {
     id: 10,
@@ -81,7 +90,8 @@ const listData = [
     fullname: "Lisa Akmila",
     job: "Web Developer",
     location: "Jakarta",
-    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"]
+    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"],
+    desc: "I am Lisa Akmila, a Web Developer with a passion for presenting creative and functional solutions in the digital world. With an educational background in Information Engineering and solid experience in the industry, I combine technical expertise with creativity to create extraordinary web experiences."
   },
   {
     id: 11,
@@ -89,7 +99,8 @@ const listData = [
     fullname: "Alia Adelia",
     job: "Web Developer",
     location: "Jakarta",
-    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"]
+    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"],
+    desc: "I am Alia Adelia, a Web Developer with a passion for presenting creative and functional solutions in the digital world. With an educational background in Information Engineering and solid experience in the industry, I combine technical expertise with creativity to create extraordinary web experiences."
   },
   {
     id: 12,
@@ -97,7 +108,8 @@ const listData = [
     fullname: "Emi Adata",
     job: "Web Developer",
     location: "Jakarta",
-    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"]
+    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"],
+    desc: "I am Emi Adata, a Web Developer with a passion for presenting creative and functional solutions in the digital world. With an educational background in Information Engineering and solid experience in the industry, I combine technical expertise with creativity to create extraordinary web experiences."
   },
   {
     id: 13,
@@ -105,7 +117,8 @@ const listData = [
     fullname: "Enka Abina",
     job: "Web Developer",
     location: "Jakarta",
-    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"]
+    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"],
+    desc: "I am Enka Abina, a Web Developer with a passion for presenting creative and functional solutions in the digital world. With an educational background in Information Engineering and solid experience in the industry, I combine technical expertise with creativity to create extraordinary web experiences."
   },
   {
     id: 14,
@@ -113,7 +126,8 @@ const listData = [
     fullname: "Larissa Mega",
     job: "Web Developer",
     location: "Jakarta",
-    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"]
+    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"],
+    desc: "I am Larissa Mega, a Web Developer with a passion for presenting creative and functional solutions in the digital world. With an educational background in Information Engineering and solid experience in the industry, I combine technical expertise with creativity to create extraordinary web experiences."
   },
 
 ]

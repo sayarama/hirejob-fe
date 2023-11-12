@@ -2,11 +2,11 @@ import {React} from 'react'
 
 function Searchbar() {
   return (
-    <div className="flex items-center p-1 shadow-md rounded-md gap-3 bg-white">
+    <div className="flex items-center p-3 shadow-md rounded-md gap-3 bg-white">
                         <input
                             type="text"
                             className="w-full outline-none"
-                            placeholder="Search for any skill"
+                            placeholder="Search for any talent"
                         ></input>
                         <svg
                             width="24"

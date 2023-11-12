@@ -31,25 +31,22 @@ function Detail(props) {
             </div>
 
             <h1 className="text-3xl font-bold mb-4">{data?.fullname}</h1>
-            <p className="mb-4">{data?.job}</p>
+            <p className="mb-4 ">{data?.job}</p>
 
             <span className=" mb-2 flex gap-2 justify-center">
               <img src="/images/map.svg" />
-              <p>{data?.location}</p>
+              <p className="text-[#9EA0A5]">{data?.location}</p>
             </span>
 
-            <p className="w-2/4 mx-auto mb-4">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+            <p className="w-2/4 mx-auto text-[#9EA0A5] mb-4">
+              {data?.desc}
             </p>
 
             <button className="bg-[#5E50A1] text-white p-3 rounded-md mb-4 w-[300px]">
               Hire
             </button>
 
-            <h2>Skill</h2>
+            <h2 className="text-2xl font-bold">Skill</h2>
             <div className="flex flex-wrap w-3/4 md:w-1/4 mx-auto mt-4 justify-center gap-[10px]">
               {data?.skills.map((item, key) => (
                 <div
@@ -97,8 +94,8 @@ function Detail(props) {
             {/* Portofolio */}
             <div className="container mx-auto mt-10 p-8">
               <div className="flex flex-col md:flex-row gap-5">
-                <h1 className="text-3xl underline decoration-[#5E50A1]">Portofolio</h1>
-                <h1 className="text-3xl">Pengalaman Kerja</h1>
+                <h1 className="text-3xl underline font-bold decoration-[#5E50A1]">Portofolio</h1>
+                <h1 className="text-3xl text-[#9EA0A5]">Pengalaman Kerja</h1>
               </div>
               {/* content */}
               <div className="flex flex-col md:flex-row md:flex-wrap items-center gap-8 justify-center md:justify-start mt-10">
