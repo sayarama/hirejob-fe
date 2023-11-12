@@ -56,9 +56,12 @@ export default function Home() {
             "Pengalaman pengguna yang efisien dan baik.",
           ]?.map((item, key) => (
             <div className="flex items-center w-3/4 mx-auto gap-5 mb-5 justify-left md:justify-start">
-              <img
+              <Image
                 className="bg-[#5E50A1] p-1 rounded-full"
                 src="/images/Vectorlayers-1.png"
+                alt="logo"
+                width={20}
+                height={20}
                 key={key}
               />
               <p>{item}</p>
