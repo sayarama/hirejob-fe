@@ -34,13 +34,13 @@ export default function Home() {
       </section>
 
       {/* Section 2 */}
-      <section className="container mx-auto text-center md:text-left flex flex-col md:flex md:flex-row justify-around items-center mt-10">
+      <section className="container mx-auto md:text-left flex flex-col md:flex md:flex-row justify-around items-center mt-10">
         <div>
           <img src="/images/img-1.png" />
         </div>
 
         <div>
-          <h1 className="text-4xl md:text-5xl mb-10">
+          <h1 className="text-4xl md:text-start text-center md:text-5xl mb-10">
             Kenapa harus mencari tallent <br /> di peworld
           </h1>
 
@@ -50,7 +50,7 @@ export default function Home() {
             "Penyaringan talent yang ketat.",
             "Pengalaman pengguna yang efisien dan baik.",
           ]?.map((item, key) => (
-            <div className="flex items-center gap-5 mb-5 justify-center md:justify-start">
+            <div className="flex items-center w-3/4 mx-auto gap-5 mb-5 justify-left md:justify-start">
               <img
                 className="bg-[#5E50A1] p-1 rounded-full"
                 src="/images/Vectorlayers-1.png"
@@ -66,7 +66,7 @@ export default function Home() {
       <section className="container mx-auto text-center md:text-left flex flex-col md:flex md:flex-row justify-around items-center mt-10 p-5">
         <div>
           <h1 className="text-5xl mb-5">Skill Tallent</h1>
-          <p className="text-lg text-justify mb-5">Skill para talent memungkinkan setiap individu untuk menonjolkan beragam keterampilan yang mereka miliki dan tentunya bisa memenuhi keinginan klien.</p>
+          <p className="text-lg text-center md:text-start mb-5">Skill para talent memungkinkan setiap individu untuk <br/> menonjolkan beragam keterampilan yang mereka miliki dan <br/> tentunya bisa memenuhi keinginan klien.</p>
           <div className="grid grid-cols-2">
             <div>
             {[
