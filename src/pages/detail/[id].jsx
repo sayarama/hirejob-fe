@@ -5,6 +5,7 @@ import Head from "next/head";
 import axios from "axios";
 import Image from "next/image";
 import { Poppins } from "next/font/google";
+import Link from "next/link";
 
 const poppins = Poppins({ subsets: ['latin'], weight: '400' })
 
@@ -65,33 +66,33 @@ function Detail(props) {
                 <span>
                   <Image src="/images/mail.svg" width={20} height={20} alt="icon" />
                 </span>
-                <span>
+                <Link href="#">
                   <p>talent@gmail.com</p>
-                </span>
+                </Link>
               </div>
               <div className="flex gap-3 mb-3 justify-center">
                 <span>
                   <Image src="/images/instagram.svg" width={20} height={20} alt="icon" />
                 </span>
-                <span>
+                <Link href="#">
                   <p>@talent12</p>
-                </span>
+                </Link>
               </div>
               <div className="flex gap-3 mb-3 justify-center">
                 <span>
                   <Image src="/images/github.svg" width={20} height={20} alt="icon" />
                 </span>
-                <span>
+                <Link href="#">
                   <p>@talent12</p>
-                </span>
+                </Link>
               </div>
               <div className="flex gap-3 mb-3 justify-center">
                 <span>
                   <Image src="/images/gitlab.svg" width={20} height={20} alt="icon" />
                 </span>
-                <span>
-                  <p>@talent12</p>
-                </span>
+                <Link href="#">
+                  <p>@talent__</p>
+                </Link>
               </div>
             </div>
             {/* Portofolio */}

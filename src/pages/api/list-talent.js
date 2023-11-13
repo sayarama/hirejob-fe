@@ -9,126 +9,54 @@ const listData = [
     fullname: "Silvia Valleria",
     job: "Web Developer",
     location: "Jakarta",
-    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"],
+    skills: ["PHP", "Javascript", "Html", "Tailwind"],
     desc: "I am Silvia Valleria, a Web Developer with a passion for presenting creative and functional solutions in the digital world. With an educational background in Information Engineering and solid experience in the industry, I combine technical expertise with creativity to create extraordinary web experiences."
   },
   {
     id: 2,
     photo: `https://i.pravatar.cc/150?u=${new Date().getTime()}`,
     fullname: "Indira Naylarissa",
-    job: "Web Developer",
+    job: "Mobile Developer",
     location: "Jakarta",
-    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"],
-    desc: "I am Indira Naylarissa, a Web Developer with a passion for presenting creative and functional solutions in the digital world. With an educational background in Information Engineering and solid experience in the industry, I combine technical expertise with creativity to create extraordinary web experiences."
+    skills: ["Java", "Flutter", "Kotlin"],
+    desc: "I'm Indira Naylarissa, a passionate Mobile Developer with a knack for turning ideas into innovative and user-friendly mobile applications.  As a tech enthusiast, I thrive on challenges and constantly seek to push the boundaries of what's possible in the ever-evolving world of mobile development. My journey began with a fascination for the seamless blend of creativity and functionality that mobile apps offer."
   },
   {
     id: 3,
     photo: `https://i.pravatar.cc/150?u=${new Date().getTime()}`,
     fullname: "Imelia Mieru",
-    job: "Web Developer",
-    location: "Jakarta",
-    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"],
-    desc: "I am Imelia Mieru, a Web Developer with a passion for presenting creative and functional solutions in the digital world. With an educational background in Information Engineering and solid experience in the industry, I combine technical expertise with creativity to create extraordinary web experiences."
+    job: "Freelancer",
+    location: "Bandung",
+    skills: ["PHP", "Javascript", "Html","Go", "Kotlin"],
+    desc: "Hello, I'm Amelia Mieru, a versatile and dedicated Freelancer ready to bring your projects to life!. With a passion for creative problem-solving and an extensive skill set, I specialize in providing top-notch freelance services tailored to your unique needs. From graphic design and content creation to digital marketing and beyond, I'm committed to delivering results that exceed expectations."
   },
   {
     id: 4,
     photo: `https://i.pravatar.cc/150?u=${new Date().getTime()}`,
     fullname: "Dina Mustika",
-    job: "Web Developer",
-    location: "Jakarta",
-    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"],
-    desc: "I am Dina Mustika, a Web Developer with a passion for presenting creative and functional solutions in the digital world. With an educational background in Information Engineering and solid experience in the industry, I combine technical expertise with creativity to create extraordinary web experiences."
+    job: "Freelancer",
+    location: "Bandung",
+    skills: ["Kotlin", "Java","Flutter"],
+    desc: "Greetings! I'm Dina Mustika, a passionate and results-driven Freelancer ready to bring your visions to life.With a blend of creativity and technical prowess, I specialize in providing freelance services that span the digital landscape. From web development and design to content creation and project management, I thrive on the diversity of challenges that each project brings."
   },
   {
     id: 5,
     photo: `https://i.pravatar.cc/150?u=${new Date().getTime()}`,
-    fullname: "Yuura Andara",
-    job: "Web Developer",
+    fullname: "Fatih Indra",
+    job: "Ios Developer",
     location: "Jakarta",
-    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"],
-    desc: "I am Yuura Andara, a Web Developer with a passion for presenting creative and functional solutions in the digital world. With an educational background in Information Engineering and solid experience in the industry, I combine technical expertise with creativity to create extraordinary web experiences."
+    skills: ["Swift", "C", "SwiftUI"],
+    desc: "Hello! I'm Fatih Indra, an enthusiastic iOS Developer passionate about crafting seamless and delightful experiences for users through innovative mobile applications.With a deep appreciation for elegant code and a commitment to staying at the forefront of iOS development, I specialize in turning ideas into high-quality, user-friendly iOS apps. From concept to execution, I bring a meticulous approach to every project, ensuring not only functionality but a polished user interface."
   },
   {
     id: 6,
     photo: `https://i.pravatar.cc/150?u=${new Date().getTime()}`,
-    fullname: "Elaine Clestia",
-    job: "Web Developer",
-    location: "Jakarta",
-    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"],
-    desc: "I am Elaine Celestia, a Web Developer with a passion for presenting creative and functional solutions in the digital world. With an educational background in Information Engineering and solid experience in the industry, I combine technical expertise with creativity to create extraordinary web experiences."
-  },
-  {
-    id: 7,
-    photo: `https://i.pravatar.cc/150?u=${new Date().getTime()}`,
-    fullname: "Cecil Liberia",
-    job: "Web Developer",
-    location: "Jakarta",
-    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"],
-    desc: "I am Cecil Liberia, a Web Developer with a passion for presenting creative and functional solutions in the digital world. With an educational background in Information Engineering and solid experience in the industry, I combine technical expertise with creativity to create extraordinary web experiences."
-  },
-  {
-    id: 8,
-    photo: `https://i.pravatar.cc/150?u=${new Date().getTime()}`,
-    fullname: "Vestia Zeta",
-    job: "Web Developer",
-    location: "Jakarta",
-    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"],
-    desc: "I am Vestia Zeta, a Web Developer with a passion for presenting creative and functional solutions in the digital world. With an educational background in Information Engineering and solid experience in the industry, I combine technical expertise with creativity to create extraordinary web experiences."
-  },
-  {
-    id: 9,
-    photo: `https://i.pravatar.cc/150?u=${new Date().getTime()}`,
-    fullname: "Patricia Valita",
-    job: "Web Developer",
-    location: "Jakarta",
-    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"],
-    desc: "I am Patricia Valita, a Web Developer with a passion for presenting creative and functional solutions in the digital world. With an educational background in Information Engineering and solid experience in the industry, I combine technical expertise with creativity to create extraordinary web experiences."
-  },
-  {
-    id: 10,
-    photo: `https://i.pravatar.cc/150?u=${new Date().getTime()}`,
-    fullname: "Lisa Akmila",
-    job: "Web Developer",
-    location: "Jakarta",
-    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"],
-    desc: "I am Lisa Akmila, a Web Developer with a passion for presenting creative and functional solutions in the digital world. With an educational background in Information Engineering and solid experience in the industry, I combine technical expertise with creativity to create extraordinary web experiences."
-  },
-  {
-    id: 11,
-    photo: `https://i.pravatar.cc/150?u=${new Date().getTime()}`,
-    fullname: "Alia Adelia",
-    job: "Web Developer",
-    location: "Jakarta",
-    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"],
-    desc: "I am Alia Adelia, a Web Developer with a passion for presenting creative and functional solutions in the digital world. With an educational background in Information Engineering and solid experience in the industry, I combine technical expertise with creativity to create extraordinary web experiences."
-  },
-  {
-    id: 12,
-    photo: `https://i.pravatar.cc/150?u=${new Date().getTime()}`,
-    fullname: "Emi Adata",
-    job: "Web Developer",
-    location: "Jakarta",
-    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"],
-    desc: "I am Emi Adata, a Web Developer with a passion for presenting creative and functional solutions in the digital world. With an educational background in Information Engineering and solid experience in the industry, I combine technical expertise with creativity to create extraordinary web experiences."
-  },
-  {
-    id: 13,
-    photo: `https://i.pravatar.cc/150?u=${new Date().getTime()}`,
-    fullname: "Enka Abina",
-    job: "Web Developer",
-    location: "Jakarta",
-    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"],
-    desc: "I am Enka Abina, a Web Developer with a passion for presenting creative and functional solutions in the digital world. With an educational background in Information Engineering and solid experience in the industry, I combine technical expertise with creativity to create extraordinary web experiences."
-  },
-  {
-    id: 14,
-    photo: `https://i.pravatar.cc/150?u=${new Date().getTime()}`,
-    fullname: "Larissa Mega",
-    job: "Web Developer",
-    location: "Jakarta",
-    skills: ["PHP", "Javascript", "Html","Go", "Kotlin", "Java","Flutter", "C++", "Ruby"],
-    desc: "I am Larissa Mega, a Web Developer with a passion for presenting creative and functional solutions in the digital world. With an educational background in Information Engineering and solid experience in the industry, I combine technical expertise with creativity to create extraordinary web experiences."
-  },
+    fullname: "Rendi Rio",
+    job: "Dev Ops",
+    location: "Bogor",
+    skills: ["Bash", "Python", "Ruby", "Go", "Java", "Perl"],
+    desc: "Greetings! I'm Rendi Rio, a dedicated DevOps enthusiast on a mission to bridge the gap between development and operations for seamless, efficient, and scalable software delivery.With a background in both development and operations, I thrive in the dynamic intersection where code meets infrastructure. My journey began with a fascination for streamlining processes, automating workflows, and optimizing deployment pipelines to enhance the overall development lifecycle."
+  }
 
 ]
 
