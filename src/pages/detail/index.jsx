@@ -162,7 +162,7 @@ function TalentList(props) {
 
 // Change to ssr
 export async function getServerSideProps() {
-    const request = await axios.get("http://localhost:3000/api/list-talent");
+    const request = await axios.get(`${process.env.BE_URL}/api/list-talent`);
 
     return {
         props: request.data,

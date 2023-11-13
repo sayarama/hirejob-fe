@@ -122,7 +122,7 @@ export async function getServerSideProps(props) {
   const { id } = props.params;
 
   const request = await axios.get(
-    `http://localhost:3000/api/list-talent?id=${id}`
+    `${process.env.BE_URL}/api/list-talent?id=${id}`
   );
 
   return {
