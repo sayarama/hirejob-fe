@@ -107,9 +107,8 @@ function register() {
                         </div>
 
                     </div>
-                    <p className="place-self-end mb-[24px]">Lupa Kata Sandi?</p>
                     <button className="p-3 rounded-md bg-[#FBB017] font-bold text-white mb-[28px]">
-                        Masuk
+                        Daftar
                     </button>
                     <p className="text-center">
                         Anda belum punya akun?{" "}

@@ -46,9 +46,11 @@ function Detail(props) {
               {data?.desc}
             </p>
 
-            <button className="bg-[#5E50A1] text-white p-3 rounded-md mb-4 w-[300px]">
+           <Link href="/detail/hire/id ">
+           <button className="bg-[#5E50A1] text-white p-3 rounded-md mb-4 w-[300px]">
               Hire
             </button>
+           </Link>
 
             <h2 className="text-2xl font-bold">Skill</h2>
             <div className="flex flex-wrap w-3/4 md:w-1/4 mx-auto mt-4 justify-center gap-[10px]">

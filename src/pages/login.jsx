@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 function login() {
     return (
@@ -52,7 +53,7 @@ function login() {
                     </button>
                     <p className="text-center">
                         Anda belum punya akun?{" "}
-                        <span className="text-[#FBB017]">Daftar disini</span>
+                        <Link href="/register"><span className="text-[#FBB017]">Daftar disini</span></Link>
                     </p>
                 </div>
             </div>
