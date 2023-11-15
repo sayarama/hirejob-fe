@@ -92,6 +92,96 @@ const listData = [
       gitlab: "@rendirio",
     },
     desc: "Greetings! I'm Rendi Rio, a dedicated DevOps enthusiast on a mission to bridge the gap between development and operations for seamless, efficient, and scalable software delivery.With a background in both development and operations, I thrive in the dynamic intersection where code meets infrastructure. My journey began with a fascination for streamlining processes, automating workflows, and optimizing deployment pipelines to enhance the overall development lifecycle."
+  },
+  {
+    id: 7,
+    photo: `https://i.pravatar.cc/150?u=${new Date().getTime()}`,
+    fullname: "Anda Andika",
+    job: "Mobile Developer",
+    location: "Yogyakarta",
+    skills: ["Swift", "Kotlin", "Flutter", "Java"],
+    socmed: {
+      email: "andika@gmail.com",
+      instagram: "@andadi",
+      github: "@andadika",
+      gitlab: "@andadika",
+    },
+    desc: "I am Anda Andrika, a Mobile Developer with a passion for presenting creative and functional solutions in the digital world. With an educational background in Information Engineering and solid experience in the industry, I combine technical expertise with creativity to create extraordinary web experiences."
+  },
+  {
+    id: 8,
+    photo: `https://i.pravatar.cc/150?u=${new Date().getTime()}`,
+    fullname: "Ahmad Riandi",
+    job: "Web Developer",
+    location: "Jakarta",
+    skills: ["HTML", "CSS", "Javascript"],
+    socmed: {
+      email: "indira@gmail.com",
+      instagram: "@indira31",
+      github: "@indiraaa",
+      gitlab: "@indiraaa",
+    },
+    desc: "Passionate web developer with a knack for creating responsive and user-friendly websites. Excited about exploring new technologies and always eager to take on challenging projects."
+  },
+  {
+    id: 9,
+    photo: `https://i.pravatar.cc/150?u=${new Date().getTime()}`,
+    fullname: "Amanda Arina",
+    job: "Android Developer",
+    location: "Surabaya",
+    skills: ["Kotlin", "Java", "Android Studio", "Flutter"],
+    socmed: {
+      email: "amelia@gmail.com",
+      instagram: "@amemieru22",
+      github: "@amemieru",
+      gitlab: "@amemieru",
+    },
+    desc: " Results-driven Android developer with a strong background in creating innovative and efficient mobile applications. Committed to delivering high-quality code and constantly staying updated with the latest industry trends."
+  },
+  {
+    id: 10,
+    photo: `https://i.pravatar.cc/150?u=${new Date().getTime()}`,
+    fullname: "Arkan Ahmad",
+    job: "IOS Developer",
+    location: "Bandung",
+    skills: ["Swift", "Xcode", "Objective-C"],
+    socmed: {
+      email: "dina@gmail.com",
+      instagram: "@dinaa21",
+      github: "@dinaaa",
+      gitlab: "@dinaaa",
+    },
+    desc: "Experienced iOS developer specializing in crafting seamless and visually appealing applications for Apple devices. Enjoys problem-solving and collaborating with cross-functional teams to achieve project goals."
+  },
+  {
+    id: 11,
+    photo: `https://i.pravatar.cc/150?u=${new Date().getTime()}`,
+    fullname: "Rachel Tan",
+    job: "Data Scientist",
+    location: "Yogyakarta",
+    skills: ["Python", "Ruby", "Machine Learning", "Java"],
+    socmed: {
+      email: "fatih@gmail.com",
+      instagram: "@indra13 ",
+      github: "@indra21",
+      gitlab: "@indra21",
+    },
+    desc: "Data scientist with a passion for extracting meaningful insights from complex datasets. Proficient in statistical analysis and machine learning algorithms, dedicated to turning data into actionable solutions."
+  },
+  {
+    id: 12,
+    photo: `https://i.pravatar.cc/150?u=${new Date().getTime()}`,
+    fullname: "Kevin Wang",
+    job: "Cybersecurity",
+    location: "Semarang",
+    skills: ["Bash", "Network", "Pentest", "Go", "Python"],
+    socmed: {
+      email: "rendi@gmail.com",
+      instagram: "@rendi15",
+      github: "@rendirio",
+      gitlab: "@rendirio",
+    },
+    desc: " Cybersecurity enthusiast with a focus on securing digital environments. Skilled in identifying and mitigating security vulnerabilities to protect against potential threats."
   }
 
 ]
