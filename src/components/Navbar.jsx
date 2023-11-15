@@ -19,12 +19,16 @@ function Navbar() {
         </Link>
 
         <div className='hidden md:flex gap-5'>
+          <Link href="/login">
           <button className='outline rounded outline-[#5E50A1] px-4 py-1'>
             Masuk
           </button>
+          </Link>
+          <Link href="/register">
           <button className='rounded bg-[#5E50A1] px-4 py-1 text-white'>
             Daftar
           </button>
+          </Link>
         </div>
 
         <div className='md:hidden'>
@@ -59,8 +63,12 @@ function Navbar() {
 
     {isOpen && (
       <div className='bg-[#5E50A1] p-2 md:hidden'>
+        <Link href="/login">
         <button className='block text-white py-1 px-4'>Masuk</button>
+        </Link>
+        <Link href="/register">
         <button className='block text-white py-1 px-4'>Daftar</button>
+        </Link>
       </div>
     )}
   </div>
