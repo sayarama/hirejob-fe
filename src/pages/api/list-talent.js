@@ -116,10 +116,10 @@ const listData = [
     location: "Jakarta",
     skills: ["HTML", "CSS", "Javascript"],
     socmed: {
-      email: "indira@gmail.com",
-      instagram: "@indira31",
-      github: "@indiraaa",
-      gitlab: "@indiraaa",
+      email: "riani@gmail.com",
+      instagram: "@riandi12",
+      github: "@riandiii",
+      gitlab: "@riandiii",
     },
     desc: "Passionate web developer with a knack for creating responsive and user-friendly websites. Excited about exploring new technologies and always eager to take on challenging projects."
   },
@@ -131,10 +131,10 @@ const listData = [
     location: "Surabaya",
     skills: ["Kotlin", "Java", "Android Studio", "Flutter"],
     socmed: {
-      email: "amelia@gmail.com",
-      instagram: "@amemieru22",
-      github: "@amemieru",
-      gitlab: "@amemieru",
+      email: "arina@gmail.com",
+      instagram: "@amandarina",
+      github: "@mindarinn",
+      gitlab: "@mindarinn",
     },
     desc: " Results-driven Android developer with a strong background in creating innovative and efficient mobile applications. Committed to delivering high-quality code and constantly staying updated with the latest industry trends."
   },
@@ -146,10 +146,10 @@ const listData = [
     location: "Bandung",
     skills: ["Swift", "Xcode", "Objective-C"],
     socmed: {
-      email: "dina@gmail.com",
-      instagram: "@dinaa21",
-      github: "@dinaaa",
-      gitlab: "@dinaaa",
+      email: "arkan@gmail.com",
+      instagram: "@arkan31",
+      github: "@arkanahmad",
+      gitlab: "@arkanahmad",
     },
     desc: "Experienced iOS developer specializing in crafting seamless and visually appealing applications for Apple devices. Enjoys problem-solving and collaborating with cross-functional teams to achieve project goals."
   },
@@ -161,10 +161,10 @@ const listData = [
     location: "Yogyakarta",
     skills: ["Python", "Ruby", "Machine Learning", "Java"],
     socmed: {
-      email: "fatih@gmail.com",
-      instagram: "@indra13 ",
-      github: "@indra21",
-      gitlab: "@indra21",
+      email: "rachel@gmail.com",
+      instagram: "@racheltan ",
+      github: "@racheltan",
+      gitlab: "@racheltan",
     },
     desc: "Data scientist with a passion for extracting meaningful insights from complex datasets. Proficient in statistical analysis and machine learning algorithms, dedicated to turning data into actionable solutions."
   },
@@ -176,12 +176,57 @@ const listData = [
     location: "Semarang",
     skills: ["Bash", "Network", "Pentest", "Go", "Python"],
     socmed: {
-      email: "rendi@gmail.com",
-      instagram: "@rendi15",
-      github: "@rendirio",
-      gitlab: "@rendirio",
+      email: "kevin@gmail.com",
+      instagram: "@kevin15",
+      github: "@kevinwang",
+      gitlab: "@kevinwang",
     },
     desc: " Cybersecurity enthusiast with a focus on securing digital environments. Skilled in identifying and mitigating security vulnerabilities to protect against potential threats."
+  },
+  {
+    id: 13,
+    photo: `https://i.pravatar.cc/150?u=${new Date().getTime()}`,
+    fullname: "Alisa Lim",
+    job: "UI/UX Designer",
+    location: "Medan",
+    skills: ["Adobe XD", "Sketch", "Figma", "Illustrator"],
+    socmed: {
+      email: "alisa@gmail.com",
+      instagram: "@alisaaa",
+      github: "@lisalim",
+      gitlab: "@lisalim",
+    },
+    desc: "Creative UI/UX designer passionate about crafting intuitive and visually appealing user interfaces. Dedicated to understanding user needs and delivering seamless design solutions."
+  },
+  {
+    id: 14,
+    photo: `https://i.pravatar.cc/150?u=${new Date().getTime()}`,
+    fullname: "David Rifqy",
+    job: "DevOps",
+    location: "Makassar",
+    skills: ["Docker", "Jenkins", "Kubernetes"],
+    socmed: {
+      email: "david@gmail.com",
+      instagram: "@davidr",
+      github: "@davidrifqy",
+      gitlab: "@davidrifqy",
+    },
+    desc: "DevOps engineer with a focus on automating and streamlining the software development process. Experienced in implementing continuous integration and deployment pipelines for efficient software delivery."
+  },
+  {
+    id: 15,
+    photo: `https://i.pravatar.cc/150?u=${new Date().getTime()}`,
+    fullname: "Randy Rafael",
+    job: "Full Stack Developer",
+    location: "Palembang",
+    skills: ["ReactJS", "NodeJS", "MongoDB", "PostgreSQL"],
+    socmed: {
+      email: "randy@gmail.com",
+      instagram: "@rrafael",
+      github: "@randyrafa",
+      gitlab: "@randyrafa",
+    },
+    desc: "Versatile full stack developer with expertise in both front-end and back-end technologies. Enjoys building scalable and responsive web applications to enhance user experiences."
   }
 
 ]
