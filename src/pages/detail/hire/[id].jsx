@@ -6,7 +6,7 @@ function hire() {
     return (
         <div>
             <Navbar />
-            <main className="py-10 px-20 mt-10 bg-[#F6F7F8]">
+            <main className="py-10 px-8 md:px-20 mt-10 bg-[#F6F7F8]">
                 <div className="flex flex-col lg:flex-row container gap-20 mx-auto">
                     {/* left */}
                     <div className="w-full lg:w-2/4 h-fit bg-white shadow-xl p-10">
@@ -16,7 +16,7 @@ function hire() {
                         <div>
                             <h1 className="text-3xl font-medium mb-5">Luois Tomlinson</h1>
                             <p className="mb-3">Lorem ipsum dolor sit amet, cosectetur adipicing elit. Vestibulum erat orci.</p>
-                            <div className="flex gap-8 text-gray-400 mb-5">
+                            <div className="flex gap-3 md:gap-8 text-gray-400 mb-5">
                                 <img src="/images/map.svg" />
                                 <p>Purwokerto, Jawa Tengah</p>
                             </div>

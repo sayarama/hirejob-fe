@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function login() {
     return (
-        <main id="auth-login" className="h-screen px-20 py-16">
+        <main id="auth-login" className="h-screen px-20 pt-12">
             <div className="flex-col md:flex md:flex-row items-center gap-16">
                 <div className="w-full relative">
                     <img
