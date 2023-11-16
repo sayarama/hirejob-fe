@@ -11,7 +11,7 @@ function Navbar() {
     setIsOpen(!isOpen);
   }
   return (
-    <div className='bg-white shadow'>
+    <div className='bg-white shadow-lg'>
     <div className='container mx-auto'>
       <div className='flex items-center justify-between p-5'>
         <Link href='/'>
