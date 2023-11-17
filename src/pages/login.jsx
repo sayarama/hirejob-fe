@@ -1,7 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
+import axios from "axios";
+import { setCookie } from "cookies-next";
 
 function login() {
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
+
+    const handleLogin = () => {
+        axios.post("https://hire-job.onrender.com/v1/auth/login", {
+            email,
+            password,
+        })
+        .then((result) => console.log(result))
+        .catch((err) => console.log(err))
+    }
     return (
         <main id="auth-login" className="h-screen px-20 pt-12">
             <div className="flex-col md:flex md:flex-row items-center gap-16">
@@ -32,6 +45,7 @@ function login() {
                                 name="email"
                                 placeholder="Masukkan Alamat Email"
                                 className="w-full border-2 p-3"
+                                onChange={(e) => setEmail(e.target.value)}
                             />
                         </div>
                         <div>
@@ -44,11 +58,12 @@ function login() {
                                 name="password"
                                 placeholder="Masukkan Password"
                                 className="w-full border-2 p-3"
+                                onChange={(e) => setPassword(e.target.value)}
                             />
                         </div>
                     </div>
                     <p className="place-self-end mb-[24px]">Lupa Kata Sandi?</p>
-                    <button className="p-3 rounded-md bg-[#FBB017] font-bold text-white mb-[28px]">
+                    <button onClick={handleLogin} className="p-3 rounded-md bg-[#FBB017] font-bold text-white mb-[28px]">
                         Masuk
                     </button>
                     <p className="text-center">

@@ -1,12 +1,14 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import axios from "axios";
 
-function hire() {
+function hire(props) {
+    const { data } = props;
     return (
-        <div>
+        <div className="bg-[#F6F7F8]">
             <Navbar />
-            <main className="py-10 px-8 md:px-20 mt-10 bg-[#F6F7F8]">
+            <main className="py-10 px-8 md:px-20 mt-10 ">
                 <div className="flex flex-col lg:flex-row container gap-20 mx-auto">
                     {/* left */}
                     <div className="w-full lg:w-2/4 h-fit bg-white shadow-xl p-10">
@@ -14,20 +16,19 @@ function hire() {
                             <img className="rounded-full" src="https://i.pravatar.cc/200" />
                         </div>
                         <div>
-                            <h1 className="text-3xl font-medium mb-5">Luois Tomlinson</h1>
-                            <p className="mb-3">Lorem ipsum dolor sit amet, cosectetur adipicing elit. Vestibulum erat orci.</p>
-                            <div className="flex gap-3 md:gap-8 text-gray-400 mb-5">
+                            <h1 className="text-3xl font-medium mb-5">{data?.fullname}</h1>
+                            <p className="mb-3">{data?.job}</p>
+                            <div className="flex gap-3 md:gap-3 text-gray-400 mb-5">
                                 <img src="/images/map.svg" />
-                                <p>Purwokerto, Jawa Tengah</p>
+                                <p>{data?.location}</p>
                             </div>
                         </div>
-                        <p className="text-gray-400 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum erat orci, mollis nec gravida sed, ornare quis urna. Curabitur eu lacus fringilla, vestibulum risus at.</p>
+                        <p className="text-gray-400 mb-5">{data?.desc}</p>
 
                         <div>
                             <h1 className="text-3xl font-medium mb-5">Skill</h1>
                             <div className="flex w-[200px] sm:w-[300px] flex-wrap gap-5">
-                                {["Phyton", "Laravel", "GO", "C++", 
-                                "Kotlin", "Javascript", "Flutter"].map((item, key) => (
+                                {data?.skills.map((item, key) => (
                                     <div
                                         className="bg-[#FBB01799] border-2 border-[#FBB017] py-1 px-5 rounded"
                                         key={key}
@@ -41,7 +42,7 @@ function hire() {
                     {/* right */}
                     <div className="w-full h-screen">
                         <div>
-                            <h1 className="text-3xl font-medium mb-3">Hubungi Louis Tomlinson</h1>
+                            <h1 className="text-3xl font-medium mb-3">Hubungi {data?.fullname}</h1>
                             <p>Lorem ipsum dolor sit amet, cosetectur adipiscing lit. in euismod ipsum et dui rhonucs acutor</p>
                         </div>
                         <div className="mt-5">
@@ -83,18 +84,6 @@ function hire() {
                             />
                         </div>
                         <div className="mb-8">
-                            <label htmlFor="phone" className="block text-sm text-gray-400">
-                                No Handphone
-                            </label>
-                            <input
-                                type="text"
-                                id="phone"
-                                name="phone"
-                                placeholder="Masukkan no handphone"
-                                className="w-full border-2 p-3"
-                            />
-                        </div>
-                        <div className="mb-8">
                             <label htmlFor="desc" className="block text-sm text-gray-400">
                                 Deskripsi
                             </label>
@@ -118,5 +107,18 @@ function hire() {
         </div>
     );
 }
+
+export async function getServerSideProps(props) {
+    const { id } = props.params;
+  
+    const request = await axios.get(
+      `${process.env.BE_URL}/api/list-talent?id=${id}`
+    );
+  
+    return {
+      props: request.data,
+    };
+  }
+  
 
 export default hire;

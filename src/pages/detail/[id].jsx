@@ -16,7 +16,7 @@ function Detail(props) {
       <Head>
         <title>Peworld | Talent Detail</title>
       </Head>
-      <header className="container mx-auto pb-5">
+      <header >
         <Navbar />
       </header>
 
@@ -46,7 +46,7 @@ function Detail(props) {
               {data?.desc}
             </p>
 
-           <Link href="/detail/hire/id ">
+           <Link href={`/detail/hire/${data?.id}`}>
            <button className="bg-[#5E50A1] text-white p-3 rounded-md mb-4 w-[300px]">
               Hire
             </button>
