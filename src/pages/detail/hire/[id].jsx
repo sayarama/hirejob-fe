@@ -39,7 +39,7 @@ function Hire(props) {
                             <h1 className="text-3xl font-medium mb-5">{data?.fullname}</h1>
                             <p className="mb-3">{data?.job}</p>
                             <div className="flex gap-3 md:gap-3 text-gray-400 mb-5">
-                                <Image width={50} height={50} src="/images/map.svg" alt="icon" />
+                                <Image width={20} height={20} src="/images/map.svg" alt="icon" />
                                 <p>{data?.location}</p>
                             </div>
                         </div>

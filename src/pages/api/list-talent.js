@@ -20,7 +20,7 @@ const listData = [
   },
   {
     id: 2,
-    photo: "/images/corporate.webp",
+    photo: "/images/corporate1.webp",
     fullname: "Indira Naylarissa",
     job: "Mobile Developer",
     location: "Jakarta",
