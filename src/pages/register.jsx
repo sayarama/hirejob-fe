@@ -14,10 +14,17 @@ function Register() {
     const [isLoading, setIsLoading] = useState(false)
     const [isSuccess, setIsSuccess] = useState(false)
     const [errMsg, setErrMsg] = useState(null)
+    // const [confirmPassword, setConfirmPassword] = useState("")
 
     const handleRegister = () => {
         setIsLoading(true);
         setErrMsg(null);
+
+        // if (password !== confirmPassword) {
+        //     setErrMsg("Password Not match")
+        // } else {
+        //     setErrMsg("")
+        // }
 
         axios.post("https://hire-job.onrender.com/v1/auth/register", {
             email,
@@ -46,7 +53,6 @@ function Register() {
             })
             .finally(() => setIsLoading(false));
     }
-    // Untuk konfirmasi kata sandi buat di frontend menggunakan verifikasi, kalau kata sandi belum sama maka error dan kalau sudah sama maka berhasil
     return (
         <main id="auth-login" className="h-screen px-20 pt-12">
             <div className="flex-col md:flex md:flex-row items-center gap-16">
@@ -169,8 +175,8 @@ function Register() {
                         </div>
 
                     </div>
-                    <button onClick={handleRegister} className="p-3 rounded-md bg-[#FBB017] font-bold text-white mb-[28px]">
-                        Daftar
+                    <button disabled={isLoading} onClick={handleRegister} className="p-3 rounded-md bg-[#FBB017] font-bold text-white mb-[28px]">
+                    {isLoading ? "Loading..." : "Daftar"}
                     </button>
                     <Link href="/login">
                         <p className="text-center">
