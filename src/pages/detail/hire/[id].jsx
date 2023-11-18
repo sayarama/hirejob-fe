@@ -24,7 +24,7 @@ function Hire(props) {
         { headers: { Authorization: `Bearer ${token}`}}
         ).then(() => setSuccessMsg("Email succesfully sended"))
     }
-    console.log("tesconsole", data?.socmed?.email)
+
     return (
         <div className="bg-[#F6F7F8]">
             <Navbar />
@@ -33,7 +33,7 @@ function Hire(props) {
                     {/* left */}
                     <div className="w-full lg:w-2/4 h-fit bg-white shadow-xl p-10">
                         <div className="flex justify-center mb-10">
-                            <Image className="rounded-full" src="https://i.pravatar.cc/200" alt="icon" />
+                            <Image className="rounded-full" width={70} height={70} src={data?.photo} alt="icon" />
                         </div>
                         <div>
                             <h1 className="text-3xl font-medium mb-5">{data?.fullname}</h1>
