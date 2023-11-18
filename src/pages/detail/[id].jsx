@@ -6,11 +6,13 @@ import axios from "axios";
 import Image from "next/image";
 import { Poppins } from "next/font/google";
 import Link from "next/link";
+import { getCookie } from "cookies-next";
 
 const poppins = Poppins({ subsets: ['latin'], weight: '400' })
 
 function Detail(props) {
   const { data } = props;
+  const user = getCookie("user") ? JSON.parse(getCookie("user")) : null;
   return (
     <div id="detail" className={poppins.className}>
       <Head>
@@ -46,11 +48,11 @@ function Detail(props) {
               {data?.desc}
             </p>
 
-           <Link href={`/detail/hire/${data?.id}`}>
+           {user? <Link href={`/detail/hire/${data?.id}`}>
            <button className="bg-[#5E50A1] text-white p-3 rounded-md mb-4 w-[300px]">
               Hire
             </button>
-           </Link>
+           </Link> : null}
 
             <h2 className="text-2xl font-bold">Skill</h2>
             <div className="flex flex-wrap w-3/4 md:w-1/4 mx-auto mt-4 justify-center gap-[10px]">

@@ -1,3 +1,5 @@
+'use client'
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Link from "next/link";
@@ -11,11 +13,11 @@ export default function Home() {
   
   return (
     <div id="page-home" className={poppins.className}>
+      <Navbar />
       <Head>
         <title>Peworld | Home</title>
       </Head>
-      {/* Header */}
-      <Navbar />
+      
 
       {/* Section 1 */}
       <section className="container mx-auto text-center md:text-left flex flex-col md:flex md:flex-row justify-around items-center mt-10">

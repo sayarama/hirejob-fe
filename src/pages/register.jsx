@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 function register() {
+    // Untuk konfirmasi kata sandi buat di frontend menggunakan verifikasi, kalau kata sandi belum sama maka error dan kalau sudah sama maka berhasil
     return (
         <main id="auth-login" className="h-screen px-20 pt-12">
             <div className="flex-col md:flex md:flex-row items-center gap-16">

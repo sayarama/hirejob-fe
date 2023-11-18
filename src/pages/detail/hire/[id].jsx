@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import axios from "axios";
+import { getCookie } from "cookies-next";
 
 function hire(props) {
     const { data } = props;
@@ -108,12 +109,24 @@ function hire(props) {
     );
 }
 
-export async function getServerSideProps(props) {
-    const { id } = props.params;
+export async function getServerSideProps({req, res, params}) {
+    const user = getCookie("user", {req, res});
+    const token = getCookie("token", {req, res})
+    const { id } = params;
   
     const request = await axios.get(
       `${process.env.BE_URL}/api/list-talent?id=${id}`
     );
+
+    
+    if(!user && !token) {
+        return {
+            redirect: {
+              permanent: false,
+              destination: `/detail/${id}`
+            }
+        }
+    }
   
     return {
       props: request.data,
