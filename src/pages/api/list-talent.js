@@ -20,7 +20,7 @@ const listData = [
   },
   {
     id: 2,
-    photo: "https://images.squarespace-cdn.com/content/v1/530ce8d1e4b067ea68a9f821/1612484390216-5NVBC0NJJTFP1OPNRU6F/corporate%2Bbusiness%2Bheadshots%2Blos%2Bangeles_Danielle%2BSpires.jpg",
+    photo: "/images/corporate.webp",
     fullname: "Indira Naylarissa",
     job: "Mobile Developer",
     location: "Jakarta",
