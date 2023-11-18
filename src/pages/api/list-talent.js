@@ -26,7 +26,7 @@ const listData = [
     location: "Jakarta",
     skills: ["Java", "Flutter", "Kotlin"],
     socmed: {
-      email: "indira@gmail.com",
+      email: "mewoyow447@ikanid.com",
       instagram: "@indira31",
       github: "@indiraaa",
       gitlab: "@indiraaa",

@@ -6,9 +6,11 @@ import { getCookie } from "cookies-next";
 
 function hire(props) {
     const { data } = props;
+    const token = getCookie("token")
     const [subject, setSubject] = useState("")
     const [senderName, setSenderName] = useState("")
     const [description, setDescription] = useState("")
+    const [successMsg, setSuccessMsg] = useState("")
 
     const handleSend = () => {
         axios.post("https://hire-job.onrender.com/v1/contact" , {
@@ -16,9 +18,12 @@ function hire(props) {
             description : description,
             sender : senderName,
             toName : data?.fullname,
-            to: data?.socmed?.email
-        })
+            to: data?.socmed?.email,
+        },
+        { headers: { Authorization: `Bearer ${token}`}}
+        ).then(() => setSuccessMsg("Email succesfully sended"))
     }
+    console.log("tesconsole", data?.socmed?.email)
     return (
         <div className="bg-[#F6F7F8]">
             <Navbar />
@@ -59,6 +64,11 @@ function hire(props) {
                             <h1 className="text-3xl font-medium mb-3">Hubungi {data?.fullname}</h1>
                             <p>Lorem ipsum dolor sit amet, cosetectur adipiscing lit. in euismod ipsum et dui rhonucs acutor</p>
                         </div>
+                        {successMsg ? (
+                            <div className="bg-[#d1e7dd] text-[#0f5132] p-4 rounded-lg w-[90%] mb-[30px]">
+                                <p>{successMsg}</p>
+                            </div>
+                        ) : null}
                         <div className="mt-5">
                             {/* Input */}
                         <div className="mb-8">
