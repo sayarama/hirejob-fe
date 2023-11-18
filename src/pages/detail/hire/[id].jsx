@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import axios from "axios";
@@ -6,6 +6,19 @@ import { getCookie } from "cookies-next";
 
 function hire(props) {
     const { data } = props;
+    const [subject, setSubject] = useState("")
+    const [senderName, setSenderName] = useState("")
+    const [description, setDescription] = useState("")
+
+    const handleSend = () => {
+        axios.post("https://hire-job.onrender.com/v1/contact" , {
+            subject: subject,
+            description : description,
+            sender : senderName,
+            toName : data?.fullname,
+            to: data?.socmed?.email
+        })
+    }
     return (
         <div className="bg-[#F6F7F8]">
             <Navbar />
@@ -56,8 +69,9 @@ function hire(props) {
                                 type="text"
                                 id="projel"
                                 name="projek"
-                                placeholder="Masukkan Alamat Email"
+                                placeholder="Masukkan Tujuan Pesan Ini"
                                 className="w-full border-2 p-3"
+                                onChange={(e) => setSubject(e.target.value)}
                             />
                         </div>
                         <div className="mb-8">
@@ -70,18 +84,7 @@ function hire(props) {
                                 name="nama"
                                 placeholder="Masukkan Nama Lengkap"
                                 className="w-full border-2 p-3"
-                            />
-                        </div>
-                        <div className="mb-8">
-                            <label htmlFor="email" className="block text-sm text-gray-400">
-                                Email
-                            </label>
-                            <input
-                                type="text"
-                                id="email"
-                                name="email"
-                                placeholder="Masukkan Email"
-                                className="w-full border-2 p-3"
+                                onChange={(e) => setSenderName(e.target.value)}
                             />
                         </div>
                         <div className="mb-8">
@@ -94,11 +97,12 @@ function hire(props) {
                                 name="desc"
                                 placeholder="Deskripsikan/jelaskan lebih detail"
                                 className="w-full border-2 p-3 pb-3 md:pb-60"
+                                onChange={(e) => setDescription(e.target.value)}
                             />
                         </div>
                         {/* Input end */}
-                        <button className="p-3 rounded-md w-full bg-[#FBB017] font-bold text-white mb-[28px]">
-                        Masuk
+                        <button className="p-3 rounded-md w-full bg-[#FBB017] font-bold text-white mb-[28px]" onClick={handleSend}>
+                        Kirim
                     </button>
                         </div>
                     </div>
