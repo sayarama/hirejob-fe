@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import axios from "axios";
+import Image from "next/image";
 import { getCookie } from "cookies-next";
 
 function hire(props) {
@@ -32,13 +33,13 @@ function hire(props) {
                     {/* left */}
                     <div className="w-full lg:w-2/4 h-fit bg-white shadow-xl p-10">
                         <div className="flex justify-center mb-10">
-                            <img className="rounded-full" src="https://i.pravatar.cc/200" />
+                            <Image className="rounded-full" src="https://i.pravatar.cc/200" alt="icon" />
                         </div>
                         <div>
                             <h1 className="text-3xl font-medium mb-5">{data?.fullname}</h1>
                             <p className="mb-3">{data?.job}</p>
                             <div className="flex gap-3 md:gap-3 text-gray-400 mb-5">
-                                <img src="/images/map.svg" />
+                                <Image width={50} height={50} src="/images/map.svg" alt="icon" />
                                 <p>{data?.location}</p>
                             </div>
                         </div>
