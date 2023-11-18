@@ -3,7 +3,7 @@ import Link from "next/link";
 import axios from "axios";
 import { setCookie, getCookie } from "cookies-next";
 
-function login() {
+function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [isLoading, setIsLoading] = useState(false);
@@ -127,4 +127,4 @@ export async function getServerSideProps({req, res}) {
     };
 }
 
-export default login;
+export default Login;
