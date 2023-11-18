@@ -65,7 +65,7 @@ const listData = [
   },
   {
     id: 5,
-    photo: `https://i.pravatar.cc/150?u=${new Date().getTime()}`,
+    photo: "/images/corporate5.webp",
     fullname: "Fatih Indra",
     job: "Ios Developer",
     location: "Jakarta",
@@ -80,7 +80,7 @@ const listData = [
   },
   {
     id: 6,
-    photo: `https://i.pravatar.cc/150?u=${new Date().getTime()}`,
+    photo: "/images/corporate6.webp",
     fullname: "Rendi Rio",
     job: "Dev Ops",
     location: "Bogor",
@@ -95,7 +95,7 @@ const listData = [
   },
   {
     id: 7,
-    photo: `https://i.pravatar.cc/150?u=${new Date().getTime()}`,
+    photo: "/images/corporate7.webp",
     fullname: "Anda Andika",
     job: "Mobile Developer",
     location: "Yogyakarta",
@@ -110,7 +110,7 @@ const listData = [
   },
   {
     id: 8,
-    photo: `https://i.pravatar.cc/150?u=${new Date().getTime()}`,
+    photo: "/images/corporate8.webp",
     fullname: "Ahmad Riandi",
     job: "Web Developer",
     location: "Jakarta",
@@ -125,7 +125,7 @@ const listData = [
   },
   {
     id: 9,
-    photo: `https://i.pravatar.cc/150?u=${new Date().getTime()}`,
+    photo: "/images/corporate15.webp",
     fullname: "Amanda Arina",
     job: "Android Developer",
     location: "Surabaya",
@@ -140,7 +140,7 @@ const listData = [
   },
   {
     id: 10,
-    photo: `https://i.pravatar.cc/150?u=${new Date().getTime()}`,
+    photo: "/images/corporate9.webp",
     fullname: "Arkan Ahmad",
     job: "IOS Developer",
     location: "Bandung",
@@ -155,7 +155,7 @@ const listData = [
   },
   {
     id: 11,
-    photo: `https://i.pravatar.cc/150?u=${new Date().getTime()}`,
+    photo: "/images/corporate13.webp",
     fullname: "Rachel Tan",
     job: "Data Scientist",
     location: "Yogyakarta",
@@ -170,7 +170,7 @@ const listData = [
   },
   {
     id: 12,
-    photo: `https://i.pravatar.cc/150?u=${new Date().getTime()}`,
+    photo: "/images/corporate10.webp",
     fullname: "Kevin Wang",
     job: "Cybersecurity",
     location: "Semarang",
@@ -185,7 +185,7 @@ const listData = [
   },
   {
     id: 13,
-    photo: `https://i.pravatar.cc/150?u=${new Date().getTime()}`,
+    photo: "/images/corporate14.webp",
     fullname: "Alisa Lim",
     job: "UI/UX Designer",
     location: "Medan",
@@ -200,7 +200,7 @@ const listData = [
   },
   {
     id: 14,
-    photo: `https://i.pravatar.cc/150?u=${new Date().getTime()}`,
+    photo: "/images/corporate11.webp",
     fullname: "David Rifqy",
     job: "DevOps",
     location: "Makassar",
@@ -215,7 +215,7 @@ const listData = [
   },
   {
     id: 15,
-    photo: `https://i.pravatar.cc/150?u=${new Date().getTime()}`,
+    photo: "/images/corporate12.webp",
     fullname: "Randy Rafael",
     job: "Full Stack Developer",
     location: "Palembang",
