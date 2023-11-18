@@ -5,7 +5,7 @@
 const listData = [
   {
     id: 1,
-    photo: "https://images.squarespace-cdn.com/content/v1/530ce8d1e4b067ea68a9f821/1612484390216-5NVBC0NJJTFP1OPNRU6F/corporate%2Bbusiness%2Bheadshots%2Blos%2Bangeles_Danielle%2BSpires.jpg",
+    photo: "/images/corporate1.webp",
     fullname: "Silvia Valleria",
     job: "Web Developer",
     location: "Jakarta",
@@ -20,7 +20,7 @@ const listData = [
   },
   {
     id: 2,
-    photo: "/images/corporate1.webp",
+    photo: "/images/corporate2.webp",
     fullname: "Indira Naylarissa",
     job: "Mobile Developer",
     location: "Jakarta",
@@ -35,7 +35,7 @@ const listData = [
   },
   {
     id: 3,
-    photo: `https://i.pravatar.cc/150?u=${new Date().getTime()}`,
+    photo: "/images/corporate3.webp",
     fullname: "Amelia Mieru",
     job: "Freelancer",
     location: "Bandung",
@@ -50,7 +50,7 @@ const listData = [
   },
   {
     id: 4,
-    photo: `https://i.pravatar.cc/150?u=${new Date().getTime()}`,
+    photo: "/images/corporate4.webp",
     fullname: "Dina Mustika",
     job: "Freelancer",
     location: "Bandung",
