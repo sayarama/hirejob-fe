@@ -52,8 +52,7 @@ function Login() {
                 <div className="w-full flex flex-col justify-center">
                     <h1 className="text-5xl font-medium">Halo, Pewpeople</h1>
                     <p className="text-[18px] mt-[16px] mb-[52px]">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In euismod
-                        ipsum et dui rhoncus auctor.
+                        Login untuk mulai mencari talent!
                     </p>
                    {errMsg ? (
                      <div className="bg-[#f8d7da] text-[#721c24] p-4 rounded-lg w-[95%]">
