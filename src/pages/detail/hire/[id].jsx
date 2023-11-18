@@ -5,7 +5,7 @@ import axios from "axios";
 import Image from "next/image";
 import { getCookie } from "cookies-next";
 
-function hire(props) {
+function Hire(props) {
     const { data } = props;
     const token = getCookie("token")
     const [subject, setSubject] = useState("")
@@ -149,4 +149,4 @@ export async function getServerSideProps({req, res, params}) {
   }
   
 
-export default hire;
+export default Hire;
