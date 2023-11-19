@@ -73,7 +73,7 @@ function Register() {
                     </p>
                     {isSuccess ? (
                         <div className="bg-[#d1e7dd] text-[#0f5132] p-4 rounded-lg w-[90%] mb-[30px]">
-                            <p>{isSuccess}</p>
+                            <p>Login Success</p>
                         </div>
                     ) : null}
 
