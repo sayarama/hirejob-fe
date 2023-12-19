@@ -5,7 +5,7 @@ Are you ready to embark on a journey that will shape your professional destiny? 
 ## Tech Stack
 
 We use several frameworks and libraries to create our front end, namely:
-
+a
 - [React JS](https://react.dev/ "React JS") - Front-End library
 - [Next JS](https://nextjs.org/ "Next JS") - Javascript Framework
 - [Tailwind](https://tailwindcss.com/ "Bootstrap") - CSS framework
