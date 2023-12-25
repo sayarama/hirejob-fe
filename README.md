@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/sayarama/tickitz-fe" target="_blank">
+  <a href="https://github.com/sayarama/hirejob-fe" target="_blank">
     <img src="https://i.ibb.co/zbdPCF1/lOGO.png alt="Tickitz" width="250px">
   </a>
 
